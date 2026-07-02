@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nbv000 — Reverse engineering, systems programming, streaming data</title>
+<meta name="description" content="Nbv000 — reverse engineering, systems programming, streaming data. Проектная работа и точечные задачи.">
+<meta property="og:title" content="Nbv000">
+<meta property="og:description" content="Reverse engineering. Systems programming. Streaming data.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nbv000.su/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<main>
+
+<header class="hero">
+  <h1>Nbv000</h1>
+  <p class="tagline">Reverse engineering. Systems programming. Streaming data.</p>
+</header>
+
+<section>
+  <h2>О себе</h2>
+  <p>Self-taught systems engineer из России. Работаю на стыке низкоуровневого Linux, обратной разработки и потоковой аналитики.</p>
+  <p>Основной опыт: IL2CPP-инструментация Unity-раннаймов через LD_PRELOAD с patch-resistant signature-based резолвом методов, двухуровневый IPC (AF_UNIX + flock fallback), распределённое управление процессами с эскалирующим watchdog-восстановлением, streaming-платформы на Go + TimescaleDB + NATS.</p>
+  <p>Открыт к проектам в области reverse engineering, systems programming, security research и streaming data pipelines.</p>
+</section>
+
+<section>
+  <h2>Проекты</h2>
+
+  <a class="project" href="https://github.com/Nbv000/il2cpp-instrumentation-study">
+    <div class="project-name">il2cpp-instrumentation-study</div>
+    <div class="project-desc">IL2CPP runtime instrumentation bridge. C++ / LD_PRELOAD. Signature-based method resolution, lazy class init, main-thread dispatch. 38 exported C-ABI functions.</div>
+  </a>
+
+  <a class="project" href="https://github.com/Nbv000/native-bridge-ipc">
+    <div class="project-name">native-bridge-ipc</div>
+    <div class="project-desc">Двухуровневый IPC: AF_UNIX socket с автоматическим fallback на file-based flock. Auto-negotiated request-ID protocol. Python + C++ demo host.</div>
+  </a>
+
+  <a class="project" href="https://github.com/Nbv000/process-supervisor">
+    <div class="project-name">process-supervisor</div>
+    <div class="project-desc">Эскалирующий watchdog с health-probe интерфейсом, chain-based recovery, sliding-window circuit breakers, episode tracker для дуг состояний.</div>
+  </a>
+
+  <a class="project" href="https://github.com/Nbv000/streaming-market-analytics">
+    <div class="project-name">streaming-market-analytics</div>
+    <div class="project-desc">End-to-end streaming-платформа. Go workspace (ingest / features / api), Python-аналитика, 21 миграция TimescaleDB, NATS JetStream, Prometheus + Grafana + Loki.</div>
+  </a>
+</section>
+
+<section>
+  <h2>Форматы работы</h2>
+  <ul class="formats">
+    <li><strong>Проектная работа.</strong> 2–6 недель, фиксированный scope, оформление через самозанятость (чек НПД).</li>
+    <li><strong>Точечные задачи.</strong> Reverse-анализ, аудит бинарей, консультация по архитектуре — оплата по факту.</li>
+    <li><strong>Долгосрочный подряд.</strong> Retainer 15–40 часов в месяц под непрерывное развитие системы.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <ul class="footer-contacts">
+      <li><a href="https://t.me/Nbv000">Telegram</a></li>
+      <li><a href="mailto:tpoedushkin@mail.ru">Email</a></li>
+      <li><a href="https://github.com/Nbv000">GitHub</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 Nbv000</div>
+  </div>
+</footer>
+
+</body>
+</html>
